@@ -1,0 +1,8 @@
+E:\EmployeeManagement\EmployeeManagement\DomainServices\bin\Debug\DomainServices.dll
+E:\EmployeeManagement\EmployeeManagement\DomainServices\bin\Debug\DomainServices.pdb
+E:\EmployeeManagement\EmployeeManagement\DomainServices\bin\Debug\Iesi.Collections.dll
+E:\EmployeeManagement\EmployeeManagement\DomainServices\bin\Debug\NHibernate.dll
+E:\EmployeeManagement\EmployeeManagement\DomainServices\bin\Debug\Iesi.Collections.xml
+E:\EmployeeManagement\EmployeeManagement\DomainServices\bin\Debug\NHibernate.xml
+E:\EmployeeManagement\EmployeeManagement\DomainServices\obj\Debug\DomainServices.dll
+E:\EmployeeManagement\EmployeeManagement\DomainServices\obj\Debug\DomainServices.pdb

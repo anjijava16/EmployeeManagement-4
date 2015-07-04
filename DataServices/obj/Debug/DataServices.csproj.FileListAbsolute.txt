@@ -1,0 +1,9 @@
+E:\EmployeeManagement\EmployeeManagement\DataServices\obj\Debug\DataServices.csprojResolveAssemblyReference.cache
+E:\EmployeeManagement\EmployeeManagement\DataServices\bin\DataServices.dll
+E:\EmployeeManagement\EmployeeManagement\DataServices\bin\DataServices.pdb
+E:\EmployeeManagement\EmployeeManagement\DataServices\bin\Iesi.Collections.dll
+E:\EmployeeManagement\EmployeeManagement\DataServices\bin\NHibernate.dll
+E:\EmployeeManagement\EmployeeManagement\DataServices\bin\Iesi.Collections.xml
+E:\EmployeeManagement\EmployeeManagement\DataServices\bin\NHibernate.xml
+E:\EmployeeManagement\EmployeeManagement\DataServices\obj\Debug\DataServices.dll
+E:\EmployeeManagement\EmployeeManagement\DataServices\obj\Debug\DataServices.pdb
