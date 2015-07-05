@@ -7,5 +7,6 @@ namespace Domain.Interfaces
         string FirstName { get; set; }
         int Id { get; set; }
         string LastName { get; set; }
+        IDepartment Department { get; set; }
     }
 }

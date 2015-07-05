@@ -1,0 +1,14 @@
+﻿@model Domain.Interfaces.IEmployee
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Deptarment Info</h2>
+
+<div>
+    <div>@Html.ActionLink("View", "Details", "Deptarment")</div>
+    <div>@Html.ActionLink("Edit", "Edit", "Deptarment")</div>
+    <div>@Html.ActionLink("Create", "Create", "Deptarment")</div>
+</div>

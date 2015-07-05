@@ -1,13 +1,17 @@
 ﻿using NHibernate;
+using NHibernate.Linq;
+using System.Transactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NHibernate.Cfg;
+using NHibernate.Context;
 
 namespace Domain.Models
 {
-    public class BaseDao<TEntity, TIdentifier>
+    public class BaseDao<TEntity, TIdentifier> : Domain.Models.IBaseDao<TEntity,TIdentifier>
         where TIdentifier : new()
         where TEntity : BaseVo<TIdentifier>
     {
@@ -115,3 +119,4 @@ namespace Domain.Models
         }
     }
 }
+

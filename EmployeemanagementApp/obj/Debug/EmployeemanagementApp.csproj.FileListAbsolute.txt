@@ -80,5 +80,8 @@ E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\bin\ko\System.Spa
 E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\bin\ru\System.Spatial.resources.dll
 E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\bin\zh-Hans\System.Spatial.resources.dll
 E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\bin\zh-Hant\System.Spatial.resources.dll
+E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\obj\Debug\EmployeemanagementApp.csprojResolveAssemblyReference.cache
 E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\obj\Debug\EmployeemanagementApp.dll
 E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\obj\Debug\EmployeemanagementApp.pdb
+E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\bin\Domain.Interfaces.dll
+E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp\bin\Domain.Interfaces.pdb

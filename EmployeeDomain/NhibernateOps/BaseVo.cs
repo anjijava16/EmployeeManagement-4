@@ -10,7 +10,7 @@ namespace Domain.Models
     /// Base Value Object class.
     /// </summary>
     /// <typeparam name="TIdentifier">Identifier Generic Type to be assigned dynamically.</typeparam>
-    public class BaseVo<TIdentifier>
+    public class BaseVo<TIdentifier> : Domain.Models.IBaseVo<TIdentifier>
         where TIdentifier : new()
     {
         /// <summary>

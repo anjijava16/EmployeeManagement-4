@@ -80,3 +80,5 @@ E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp.Tests\bin\Debug\z
 E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp.Tests\obj\Debug\EmployeemanagementApp.Tests.csprojResolveAssemblyReference.cache
 E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp.Tests\obj\Debug\EmployeemanagementApp.Tests.dll
 E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp.Tests\obj\Debug\EmployeemanagementApp.Tests.pdb
+E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp.Tests\bin\Debug\Domain.Interfaces.dll
+E:\EmployeeManagement\EmployeeManagement\EmployeemanagementApp.Tests\bin\Debug\Domain.Interfaces.pdb

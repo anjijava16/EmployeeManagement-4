@@ -8,5 +8,6 @@
     <property name="FirstName" />
     <property name="LastName" />
     <property name="Designation" />
+    <one-to-one name="Department" class="IDepartment" />
   </class>
 </hibernate-mapping>

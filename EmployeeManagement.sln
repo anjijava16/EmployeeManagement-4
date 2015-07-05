@@ -6,6 +6,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Models", "EmployeeDomain\Domain.Models.csproj", "{9B0C4730-1FC4-4782-8EA2-E503126CB202}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeemanagementApp", "EmployeemanagementApp\EmployeemanagementApp.csproj", "{D838C1B0-6737-4E07-B3D3-6059B6D5071E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D308BD8-9437-4C8F-AF1F-B18305A09034} = {6D308BD8-9437-4C8F-AF1F-B18305A09034}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeemanagementApp.Tests", "EmployeemanagementApp.Tests\EmployeemanagementApp.Tests.csproj", "{487D40CF-2D9C-4C01-B53B-F4786A16239E}"
 EndProject

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EmployeeMgmtService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEmployeeMgmtService_CreateDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_CreateDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_CreateEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_CreateEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_DeleteDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_DeleteDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_DeleteEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_DeleteEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_ReadDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_ReadDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_ReadEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_ReadEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_UpdateDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_UpdateDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_UpdateEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IEmployeeMgmtService_UpdateEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEmployeeMgmtService">
+    <wsdl:operation name="CreateDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeMgmtService/CreateDepartment" message="tns:IEmployeeMgmtService_CreateDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeMgmtService/CreateDepartmentResponse" message="tns:IEmployeeMgmtService_CreateDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeMgmtService/CreateEmployee" message="tns:IEmployeeMgmtService_CreateEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeMgmtService/CreateEmployeeResponse" message="tns:IEmployeeMgmtService_CreateEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeMgmtService/DeleteDepartment" message="tns:IEmployeeMgmtService_DeleteDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeMgmtService/DeleteDepartmentResponse" message="tns:IEmployeeMgmtService_DeleteDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeMgmtService/DeleteEmployee" message="tns:IEmployeeMgmtService_DeleteEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeMgmtService/DeleteEmployeeResponse" message="tns:IEmployeeMgmtService_DeleteEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeMgmtService/ReadDepartment" message="tns:IEmployeeMgmtService_ReadDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeMgmtService/ReadDepartmentResponse" message="tns:IEmployeeMgmtService_ReadDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeMgmtService/ReadEmployee" message="tns:IEmployeeMgmtService_ReadEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeMgmtService/ReadEmployeeResponse" message="tns:IEmployeeMgmtService_ReadEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeMgmtService/UpdateDepartment" message="tns:IEmployeeMgmtService_UpdateDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeMgmtService/UpdateDepartmentResponse" message="tns:IEmployeeMgmtService_UpdateDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmployeeMgmtService/UpdateEmployee" message="tns:IEmployeeMgmtService_UpdateEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmployeeMgmtService/UpdateEmployeeResponse" message="tns:IEmployeeMgmtService_UpdateEmployee_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="EmployeeMgmtService" />
+</wsdl:definitions>

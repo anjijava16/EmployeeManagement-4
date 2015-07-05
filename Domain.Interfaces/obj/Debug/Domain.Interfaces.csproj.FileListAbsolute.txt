@@ -2,3 +2,4 @@ E:\EmployeeManagement\EmployeeManagement\Domain.Interfaces\bin\Debug\Domain.Inte
 E:\EmployeeManagement\EmployeeManagement\Domain.Interfaces\bin\Debug\Domain.Interfaces.pdb
 E:\EmployeeManagement\EmployeeManagement\Domain.Interfaces\obj\Debug\Domain.Interfaces.dll
 E:\EmployeeManagement\EmployeeManagement\Domain.Interfaces\obj\Debug\Domain.Interfaces.pdb
+E:\EmployeeManagement\EmployeeManagement\Domain.Interfaces\obj\Debug\Domain.Interfaces.csprojResolveAssemblyReference.cache
