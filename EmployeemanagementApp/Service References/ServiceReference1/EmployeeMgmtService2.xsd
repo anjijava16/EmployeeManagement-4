@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <xs:element name="CreateDepartment">
     <xs:complexType>
       <xs:sequence>
@@ -31,7 +32,7 @@
   <xs:element name="DeleteDepartment">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -43,7 +44,7 @@
   <xs:element name="DeleteEmployee">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -52,10 +53,22 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetAllDepartments">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllDepartmentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAllDepartmentsResult" nillable="true" type="q1:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ReadDepartment">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -66,10 +79,22 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetAllEmployees">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllEmployeesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAllEmployeesResult" nillable="true" type="q2:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ReadEmployee">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

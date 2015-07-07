@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2f5f168a-87b3-4c70-b00e-353628c56615" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2068/EmployeeMgmtService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmployeeMgmtService.xsd" MetadataType="Schema" ID="4ed02a5b-db54-4caa-8b24-5d7a23c711cc" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EmployeeMgmtService.wsdl" MetadataType="Wsdl" ID="6fe674a0-e967-4299-ae37-fde55c2cba02" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?wsdl" />
+    <MetadataFile FileName="EmployeeMgmtService1.xsd" MetadataType="Schema" ID="ab8d5bc5-61b5-4409-a7c5-4beabd633f06" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EmployeeMgmtService2.xsd" MetadataType="Schema" ID="f9c4259a-3459-402f-b661-7e353c6e5e02" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EmployeeMgmtService.disco" MetadataType="Disco" ID="914bab5c-ce2c-457d-95cf-95214c477d7f" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -35,9 +35,9 @@ namespace DataServices
             return Repo.GetEmployeeRepository().Create((Employee)emp);
         }
 
-        public IEmployee ReadEmployee(string empid)
+        public IEmployee ReadEmployee(int empid)
         {
-            return Repo.GetEmployeeRepository().LoadById(Convert.ToInt32(empid));
+            return Repo.GetEmployeeRepository().LoadById(empid);
         }
 
         public void UpdateEmployee(IEmployee emp)
@@ -45,9 +45,9 @@ namespace DataServices
              Repo.GetEmployeeRepository().SaveOrUpdate((Employee)emp);
         }
 
-        public void DeleteEmployee(string id)
+        public void DeleteEmployee(int id)
         {
-            Repo.GetEmployeeRepository().DeleteById(Convert.ToInt32(id));
+            Repo.GetEmployeeRepository().DeleteById(id);
         }
 
         public int CreateDepartment(IDepartment dept)
@@ -55,9 +55,9 @@ namespace DataServices
             return Repo.GetDepartmentRepository().Create((Department)dept);
         }
 
-        public IDepartment ReadDepartment(string id)
+        public IDepartment ReadDepartment(int id)
         {
-            return Repo.GetDepartmentRepository().LoadById(Convert.ToInt32(id));
+            return Repo.GetDepartmentRepository().LoadById(id);
         }
 
         public void UpdateDepartment(IDepartment dept)
@@ -65,10 +65,21 @@ namespace DataServices
              Repo.GetDepartmentRepository().SaveOrUpdate((Department)dept);
         }
 
-        public void DeleteDepartment(string id)
+        public void DeleteDepartment(int id)
         {
-            Repo.GetDepartmentRepository().DeleteById(Convert.ToInt32(id));
+            Repo.GetDepartmentRepository().DeleteById(id);
         }
 
+
+
+        public IList<Domain.Interfaces.IDepartment> GetAllDepartments()
+        {
+            return (IList<Domain.Interfaces.IDepartment>)Repo.GetDepartmentRepository().LoadAll();
+        }
+
+        public IList<Domain.Interfaces.IEmployee> GetAllEmployees()
+        {
+            return (IList<Domain.Interfaces.IEmployee>)Repo.GetEmployeeRepository().LoadAll();
+        }
     }
 }

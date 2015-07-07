@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
@@ -17,19 +18,27 @@ namespace DataServices
 
         [OperationContract]
         [WebInvoke(UriTemplate = "Department/Delete/{id}", Method = "DELETE")]
-        void DeleteDepartment(string id);
+        void DeleteDepartment(int id);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "Employee/Delete/{id}", Method = "DELETE")]
-        void DeleteEmployee(string id);
+        void DeleteEmployee(int id);
+
+        [WebGet(UriTemplate = "Department/GetAll")]
+        [OperationContract]
+        IList<Domain.Interfaces.IDepartment> GetAllDepartments();
 
         [WebGet(UriTemplate = "Department/{id}")]
         [OperationContract]
-        Domain.Interfaces.IDepartment ReadDepartment(string id);
+        Domain.Interfaces.IDepartment ReadDepartment(int id);
+
+        [WebGet(UriTemplate = "Employee/GetAll")]
+        [OperationContract]
+        IList<Domain.Interfaces.IEmployee> GetAllEmployees();
 
         [OperationContract]
         [WebGet(UriTemplate = "Employee/{id}")]
-        Domain.Interfaces.IEmployee ReadEmployee(string id);
+        Domain.Interfaces.IEmployee ReadEmployee(int id);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "Department/Update", Method= "PUT") ]

@@ -68,11 +68,13 @@
       <DependentUpon>ThunderDB.mdf</DependentUpon>
     </Content>
     <Content Include="EmployeeMgmtService.svc" />
-    <Content Include="Global.asax" />
     <EmbeddedResource Include="hibernate.cfg.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <Content Include="Web.config" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmployeeMgmtService.svc.cs">
@@ -80,13 +82,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="IEmployeeMgmtService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="App.config" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -118,7 +120,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>2378</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:2068/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

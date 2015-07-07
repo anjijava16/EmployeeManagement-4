@@ -12,3 +12,16 @@ E:\EmployeeManagement\EmployeeManagement\EmployeeDomain\bin\Debug\NHibernate.xml
 E:\EmployeeManagement\EmployeeManagement\EmployeeDomain\obj\Debug\Domain.Models.csprojResolveAssemblyReference.cache
 E:\EmployeeManagement\EmployeeManagement\EmployeeDomain\obj\Debug\Domain.Models.dll
 E:\EmployeeManagement\EmployeeManagement\EmployeeDomain\obj\Debug\Domain.Models.pdb
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\Domain.Models.dll.config
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\Domain.Models.dll
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\Domain.Models.pdb
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\Domain.Interfaces.dll
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\Iesi.Collections.dll
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\log4net.dll
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\NHibernate.dll
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\Domain.Interfaces.pdb
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\Iesi.Collections.xml
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\log4net.xml
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\bin\Debug\NHibernate.xml
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\obj\Debug\Domain.Models.dll
+C:\Users\Skywalker\Documents\GitHub\EmployeeManagement\EmployeeDomain\obj\Debug\Domain.Models.pdb

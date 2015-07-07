@@ -22,13 +22,7 @@ namespace EmployeemanagementApp.Controllers
         [HttpGet]
         public ActionResult Details(int id)
         {
-            IEmployee emp;
-          using(EmpServiceRef.EmployeeMgmtServiceClient svc=new EmpServiceRef.EmployeeMgmtServiceClient("Basic_HttpBinding_EmpMgmt"))
-          {
-              emp = (IEmployee)svc.ReadEmployee(id.ToString());
-          }
-
-          return View(emp);
+            return View();
         }
 
         //
