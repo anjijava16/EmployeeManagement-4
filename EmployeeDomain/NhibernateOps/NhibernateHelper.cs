@@ -8,6 +8,9 @@ using System.Web;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Context;
+using FluentNHibernate.Cfg;
+using FluentNHibernate.Cfg.Db;
+using NHibernate.Tool.hbm2ddl;
 
 namespace Domain.Models
 {
@@ -28,11 +31,24 @@ namespace Domain.Models
             {
                 if (_sessionFactory == null)
                 {
-                    Configuration configuration = new Configuration();
-                    configuration.Configure();
 
-                    // build a Session Factory
-                    _sessionFactory = configuration.BuildSessionFactory();
+                    _sessionFactory = Fluently
+                .Configure()
+                .Database((MsSqlConfiguration.MsSql2008 // 
+                        .ConnectionString(c => c.FromConnectionStringWithKey("abc"))
+                        .ShowSql()))
+                .CurrentSessionContext("web")
+                .Mappings(m => m.FluentMappings
+                .AddFromAssemblyOf<Domain.Models.Entities.Department>())
+              .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Domain.Models.BaseVo<int>>())
+                .ExposeConfiguration(cfg => new SchemaExport(cfg).Create(true, true))
+                .BuildSessionFactory();
+
+                    //Configuration configuration = new Configuration();
+                    //configuration.Configure();
+
+                    //// build a Session Factory
+                    //_sessionFactory = configuration.BuildSessionFactory();
                 }
                 return _sessionFactory;
             }

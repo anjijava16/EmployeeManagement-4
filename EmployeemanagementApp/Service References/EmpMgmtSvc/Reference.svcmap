@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e57600d2-a7c9-4887-9ce0-25f397ce51c0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2068/EmployeeMgmtService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmployeeMgmtService.wsdl" MetadataType="Wsdl" ID="f8c807e9-9d8b-422c-aeeb-20aefab8ce87" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?wsdl" />
+    <MetadataFile FileName="EmployeeMgmtService3.xsd" MetadataType="Schema" ID="419b0937-78fe-4639-a689-fe5fa5eced5d" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EmployeeMgmtService.xsd" MetadataType="Schema" ID="42422a63-6078-458c-8cea-bfdf18f1ecb9" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EmployeeMgmtService1.xsd" MetadataType="Schema" ID="ee8ea96e-7071-42a0-b76f-252cdf9b8a6f" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EmployeeMgmtService2.xsd" MetadataType="Schema" ID="ad9d4dde-aad8-49f3-b2a1-287929897d3d" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EmployeeMgmtService.disco" MetadataType="Disco" ID="a3ece3b3-2896-4bdb-b2ff-035869ad76d1" SourceId="1" SourceUrl="http://localhost:2068/EmployeeMgmtService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

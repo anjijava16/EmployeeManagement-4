@@ -14,5 +14,7 @@
     <property name="dialect">
       NHibernate.Dialect.MsSql2012Dialect
     </property>
+    <mapping assembly="Domain.Models"/>
+  
   </session-factory>
 </hibernate-configuration>

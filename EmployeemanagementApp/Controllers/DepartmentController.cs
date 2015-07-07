@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmployeemanagementApp.EmpMgmtSvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,7 +14,12 @@ namespace EmployeemanagementApp.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            List<Department> deptColl;
+            using (EmpMgmtSvc.EmployeeMgmtServiceClient svc = new EmpMgmtSvc.EmployeeMgmtServiceClient())
+            {
+                deptColl = svc.GetAllDepartments();
+            }
+            return View(deptColl);
         }
 
         //
@@ -41,13 +47,27 @@ namespace EmployeemanagementApp.Controllers
             try
             {
                 // TODO: Add insert logic here
+                var deptName = GetDeptName(collection);
+                if (!(string.IsNullOrWhiteSpace(deptName)))
+                {
+                    using (EmpMgmtSvc.EmployeeMgmtServiceClient svc = new EmpMgmtSvc.EmployeeMgmtServiceClient())
+                    {
 
+                        svc.CreateDepartment(deptName);
+                    }
+                }
                 return RedirectToAction("Index");
             }
             catch
             {
                 return View();
             }
+        }
+
+        private  string GetDeptName(FormCollection collection)
+        {
+            var deptName = collection.GetValue("DepartmentName").AttemptedValue;
+            return deptName;
         }
 
         //
@@ -67,7 +87,15 @@ namespace EmployeemanagementApp.Controllers
             try
             {
                 // TODO: Add update logic here
-
+                  var deptName = GetDeptName(collection);
+                  if (!(string.IsNullOrWhiteSpace(deptName)))
+                  {
+                      using (EmpMgmtSvc.EmployeeMgmtServiceClient svc = new EmpMgmtSvc.EmployeeMgmtServiceClient())
+                      {
+                         
+                         
+                      }
+                  }
                 return RedirectToAction("Index");
             }
             catch

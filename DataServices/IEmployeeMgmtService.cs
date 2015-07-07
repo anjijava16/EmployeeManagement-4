@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
+using Domain.Interfaces;
+using Domain.Models.Entities;
 namespace DataServices
 {
     [ServiceContract]
@@ -10,11 +12,11 @@ namespace DataServices
     {
         [WebInvoke(UriTemplate = "Department/Add", Method = "POST")]
         [OperationContract]
-        int CreateDepartment(Domain.Interfaces.IDepartment dept);
+        int CreateDepartment(string dept);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "Employee/Add", Method = "POST")]
-        int CreateEmployee(Domain.Interfaces.IEmployee emp);
+        int CreateEmployee(Employee emp);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "Department/Delete/{id}", Method = "DELETE")]
@@ -26,26 +28,26 @@ namespace DataServices
 
         [WebGet(UriTemplate = "Department/GetAll")]
         [OperationContract]
-        IList<Domain.Interfaces.IDepartment> GetAllDepartments();
+        List<Department> GetAllDepartments();
 
         [WebGet(UriTemplate = "Department/{id}")]
         [OperationContract]
-        Domain.Interfaces.IDepartment ReadDepartment(int id);
+        Department ReadDepartment(int id);
 
         [WebGet(UriTemplate = "Employee/GetAll")]
         [OperationContract]
-        IList<Domain.Interfaces.IEmployee> GetAllEmployees();
+        List<Employee> GetAllEmployees();
 
         [OperationContract]
         [WebGet(UriTemplate = "Employee/{id}")]
-        Domain.Interfaces.IEmployee ReadEmployee(int id);
+        Employee ReadEmployee(int id);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "Department/Update", Method= "PUT") ]
-        void UpdateDepartment(Domain.Interfaces.IDepartment dept);
+        void UpdateDepartment(Department dept);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "Employee/Update", Method = "PUT")]
-        void UpdateEmployee(Domain.Interfaces.IEmployee emp);
+        void UpdateEmployee(Employee emp);
     }
 }

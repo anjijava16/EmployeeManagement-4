@@ -25,9 +25,9 @@ namespace DataServices
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
-            //_sessionHelper = new SessionHelper();
-            //_sessionHelper.OpenSession();
-            //Application.Set("NhibernateConn", _sessionHelper);
+            _sessionHelper = new SessionHelper();
+            _sessionHelper.OpenSession();
+            Application.Set("NhibernateConn", _sessionHelper);
         }
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)

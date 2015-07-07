@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="DomainModels.Models" namespace="DomainModels.Models">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="Domain.Models" namespace="Domain.Models.Entities">
   <class name="Employee" table="Employee" dynamic-update="true" >
     <cache usage="read-write"/>
     <id name="Id" column="Id" type="int">
@@ -8,6 +8,6 @@
     <property name="FirstName" />
     <property name="LastName" />
     <property name="Designation" />
-    <one-to-one name="Department" class="IDepartment" />
+    <one-to-one name="Department" class="Department" />
   </class>
 </hibernate-mapping>

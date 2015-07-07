@@ -1,0 +1,30 @@
+﻿@model EmployeemanagementApp.EmpMgmtSvc.Department
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Department</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DepartmentName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DepartmentName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id1)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id1)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

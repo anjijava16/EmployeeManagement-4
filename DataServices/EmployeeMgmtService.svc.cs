@@ -30,19 +30,19 @@ namespace DataServices
             }
         }
 
-        public int CreateEmployee(IEmployee emp)
+        public int CreateEmployee(Employee emp)
         {
-            return Repo.GetEmployeeRepository().Create((Employee)emp);
+            return Repo.GetEmployeeRepository().Create(emp);
         }
 
-        public IEmployee ReadEmployee(int empid)
+        public Employee ReadEmployee(int empid)
         {
             return Repo.GetEmployeeRepository().LoadById(empid);
         }
 
-        public void UpdateEmployee(IEmployee emp)
+        public void UpdateEmployee(Employee emp)
         {
-             Repo.GetEmployeeRepository().SaveOrUpdate((Employee)emp);
+             Repo.GetEmployeeRepository().SaveOrUpdate(emp);
         }
 
         public void DeleteEmployee(int id)
@@ -50,19 +50,19 @@ namespace DataServices
             Repo.GetEmployeeRepository().DeleteById(id);
         }
 
-        public int CreateDepartment(IDepartment dept)
+        public int CreateDepartment(string deptName)
         {
-            return Repo.GetDepartmentRepository().Create((Department)dept);
+            return Repo.GetDepartmentRepository().Create(new Department() {  DepartmentName =deptName});
         }
 
-        public IDepartment ReadDepartment(int id)
+        public Department ReadDepartment(int id)
         {
             return Repo.GetDepartmentRepository().LoadById(id);
         }
 
-        public void UpdateDepartment(IDepartment dept)
+        public void UpdateDepartment(Department dept)
         {
-             Repo.GetDepartmentRepository().SaveOrUpdate((Department)dept);
+             Repo.GetDepartmentRepository().SaveOrUpdate(dept);
         }
 
         public void DeleteDepartment(int id)
@@ -72,14 +72,15 @@ namespace DataServices
 
 
 
-        public IList<Domain.Interfaces.IDepartment> GetAllDepartments()
+        public List<Department> GetAllDepartments()
         {
-            return (IList<Domain.Interfaces.IDepartment>)Repo.GetDepartmentRepository().LoadAll();
+            return Repo.GetDepartmentRepository().LoadAll().ToList();
+            
         }
 
-        public IList<Domain.Interfaces.IEmployee> GetAllEmployees()
+        public List<Employee> GetAllEmployees()
         {
-            return (IList<Domain.Interfaces.IEmployee>)Repo.GetEmployeeRepository().LoadAll();
+            return Repo.GetEmployeeRepository().LoadAll().ToList();
         }
     }
 }

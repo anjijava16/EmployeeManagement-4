@@ -187,6 +187,7 @@
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DepartmentApiController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -195,7 +196,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\ServiceReference1\Reference.cs">
+    <Compile Include="Service References\EmpMgmtSvc\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -273,10 +274,19 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <None Include="Service References\ServiceReference1\EmployeeMgmtService.disco" />
-    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
-    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
-    <None Include="Service References\ServiceReference1\Reference.svcmap">
+    <Content Include="Service References\EmpMgmtSvc\EmployeemanagementApp.EmpMgmtSvc.Department.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\EmpMgmtSvc\EmployeemanagementApp.EmpMgmtSvc.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\EmpMgmtSvc\EmployeeMgmtService.disco" />
+    <None Include="Service References\EmpMgmtSvc\configuration91.svcinfo" />
+    <None Include="Service References\EmpMgmtSvc\configuration.svcinfo" />
+    <None Include="Service References\EmpMgmtSvc\EmployeeMgmtService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpMgmtSvc\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -322,17 +332,21 @@
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Details.cshtml" />
     <Content Include="Views\Employee\Edit.cshtml" />
+    <None Include="Service References\EmpMgmtSvc\EmployeeMgmtService.wsdl" />
+    <None Include="Service References\EmpMgmtSvc\EmployeeMgmtService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpMgmtSvc\EmployeeMgmtService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpMgmtSvc\EmployeeMgmtService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Views\Department\Index.cshtml" />
-    <None Include="Service References\ServiceReference1\EmployeeMgmtService.wsdl" />
-    <None Include="Service References\ServiceReference1\EmployeeMgmtService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference1\EmployeeMgmtService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ServiceReference1\EmployeeMgmtService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
+    <Content Include="Views\Department\Details.cshtml" />
+    <Content Include="Views\Department\Create.cshtml" />
+    <Content Include="Views\Department\Edit.cshtml" />
+    <Content Include="Views\Department\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -344,13 +358,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj">
-      <Project>{64bc22cd-2530-406b-95ff-897ea3387f36}</Project>
-      <Name>Domain.Interfaces</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\EmpMgmtSvc\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
